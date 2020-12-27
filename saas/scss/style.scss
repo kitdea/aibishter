@@ -1,0 +1,654 @@
+@import 'config';
+@import 'footer';
+@import 'header';
+@import 'utilities';
+@import 'about';
+@import 'contact';
+@import 'projects';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $font-stack;
+    font-size: $font-size;
+    line-height: 1.6;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+
+// HERO SECTION
+.hero-container {
+    background: linear-gradient(100deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.5)), 
+                url(/images/hero-banner.jpg) no-repeat center scroll;
+    height: 400px;
+    width: 100%;
+    background-size: default;
+    background-position-x: 50%;
+    background-position-y: 12%;
+    display: flex;
+            
+            .hero-content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 0 10px;
+
+                        h1 {
+                            font-family: $font-stack;
+                            font-size: calc(1.7rem + 0.8vw);
+                            color: rgb(80, 80, 80);
+                            font-weight: 700;
+                            // text-shadow: 1px 2px 2px rgba(131, 131, 131, 0.1);
+                        }
+
+                        h3 {
+                            font-family: $font-stack;
+                            color: rgb(80, 80, 80);
+                            font-weight: 400;
+                        }
+
+                        .hero-btn {
+                            background-color: $secondary-color;
+                            padding: 12px 20px;
+                            border: none;
+                            border-radius: 50px;
+                            width: 140px;
+                            margin-top: 10px;
+                            transition: .5s ease;
+                            cursor: pointer;
+                        }
+
+                        .hero-btn a {
+                            font-family: $font-stack;
+                            color: #fff;
+                            text-decoration: none;
+                        }
+
+                        .hero-btn:hover {
+                            background-color: #f7a400;
+                            transition: .5s;
+                            box-shadow: 1px 1px 10px rgba($color: #3a3a3a, $alpha: 0.2);
+                        }
+            }
+}
+
+// WHY SECTION
+
+.why-container {
+    padding: 50px 0;
+    background-color: $bg-color;
+
+        .why-content {
+            padding: 0 10px;
+        }
+        
+        .img-why img {
+            width:100%;
+            height: 100%;
+        }
+
+        h2 {
+            font-family: $font-stack;
+            font-size: 1.4rem;
+            color:rgb(80, 80, 80);
+            text-align: center;            
+        }
+
+        p {
+            font-family: $font-stack;
+            color:rgb(80, 80, 80);
+        }
+}
+
+// SERVICES
+
+.services {
+    padding: 40px 10px 0;
+    background-color: #F2F2F2;
+
+    &__title {
+        font-family: $font-stack;
+        font-size: 1rem;
+        color: $text-color;
+        text-align: center;
+    }
+
+    &__desc {
+        font-family: $font-stack;
+        color: $text-color;
+    }
+
+&__content_services {
+    padding: 30px 0;
+    margin: 0 auto;
+
+    img {
+        height: 70px;
+        width: 70px;
+        margin: 10px auto;
+        transition: .5s ease;
+        cursor: pointer;
+    }
+
+    h3 {
+        color: $text-color;
+    }
+
+    p {
+        font-size: .9rem;
+        font-weight: 100;
+        color: $text-color;
+    }
+
+    img:hover {
+        transform: scale(1.1);
+        transition: .5s;
+    }    
+}
+    
+    &__design, &__installation, &__renewable {
+        padding: 20px 0;
+        text-align: center;
+    }
+}
+
+.qoute {
+    background-color: #2471b0;
+    padding: 20px 10px;
+    color: #fff;
+
+    .qoute__content_text {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+}
+
+.mtt-container {
+    background-color: $bg-color;
+    padding: 40px 10px;
+    
+    .meet-the-team {
+        font-family: $font-stack;
+        font-size: 1rem;
+        color: $text-color;
+        text-align: center;
+        line-height: 1.2;
+    }
+
+    .mtt__container-box {
+        justify-content: center;
+        
+        background-color: #fff;
+        
+        margin: 10px auto;
+        box-shadow: 1px 1px 10px rgba($color: #3a3a3a, $alpha: 0.2);
+
+        .mtt__image-box img {
+            width: 100%;
+        }
+
+        .mtt__text-box {
+            padding: 10px;
+            font-size: 0.9rem;
+            font-weight: 100;
+            color: $text-color;
+        }
+
+
+        .mtt-btn {
+            background-color: #0d3b61;
+            padding: 12px 20px;
+            border-radius: 50px;
+            border: none;
+            width: 140px;
+            margin-top: 10px;
+            transition: .5s ease;
+            cursor: pointer;
+        }
+
+        .mtt-btn a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .mtt-btn:hover {
+            background-color: #1b5686;
+            transition: .5s ease;
+            box-shadow: 1px 1px 10px rgba($color: #3a3a3a, $alpha: 0.2);
+        }
+    }
+}
+
+.projects {
+    padding: 40px 10px;
+
+    h2 {
+        color: $text-color;
+        text-align: center;
+    }
+    .ae-projects__content {
+        padding-top: 3rem;
+       
+        .ae-projects__content-001 {
+            box-shadow: $box-shadow;
+            margin: 20px 0;
+
+            a {
+                text-decoration: none;
+            }
+            
+            img {
+                width: 100%;
+            }
+        
+            h3 {
+                font-size: 1.1rem;
+                font-weight: 600;
+                color: $text-color;
+                padding: 0 10px;
+            }
+        
+            p {
+                font-size: 0.9rem;
+                font-weight: 100;
+                color: $text-color;
+                padding: 10px;
+            }
+        }
+       
+       
+    }
+   
+}
+
+.need-a-solar {
+    padding: 20px 10px;
+    background-color: $bg-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    &__box {
+        background-color: #fff;
+        box-shadow: $box-shadow;
+        margin: 20px 0;
+        padding-bottom: 40px;
+
+        img {
+            width: 100%;
+        }
+    }
+        &__button {
+            padding: 8px 20px;
+            border: none;
+            border-radius: 50px;
+            color: #fff;
+            text-decoration: none;
+            background-color: $secondary-color;
+            width: 150px;
+            margin: 0 auto;
+            transition: .5s ease;
+            cursor: pointer;
+        }
+
+         a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        &__button:hover {
+            background-color: #f7a400;
+            transition: .5s;
+            box-shadow: 1px 1px 10px rgba($color: #3a3a3a, $alpha: 0.2);
+        }
+    
+}
+
+
+@media (min-width: 768px) {
+    .hero-container {
+        background: linear-gradient(100deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.2)), 
+        url(/images/hero-banner.jpg) no-repeat center fixed;
+        height: 500px;
+        width: 100%;
+        background-size: default;
+        background-position-x: 50%;
+        background-position-y: 12%;
+        display: flex;
+    }
+
+    .why-container {
+           
+        .why-content {
+            width: 100%;
+            margin: 0 auto;
+            width: 760px;
+            display: flex;
+            flex-direction: row;
+
+                .why-desc {
+                            
+                    h2 {
+                        text-align: left;
+                    }
+                }
+        }
+    }
+    
+        .services {
+            margin: 0 auto;
+            padding: 60px 10px 40px 10px;
+            background-color: #F2F2F2;
+    
+            &__content {
+                margin: 0 auto;
+                width: 60%;
+                text-align: center;
+            }
+
+            &__content_services {
+                display: flex;
+            }
+
+            &__design, 
+            &__installation, 
+            &__renewable {
+                margin: 0 20px;
+                padding: 0 0;
+                text-align: center;  
+            }       
+        }
+
+    .mtt__container-box {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: #fff;
+        padding: 20px 20px;
+        margin: 10px auto;
+        box-shadow: 1px 1px 10px rgba($color: #3a3a3a, $alpha: 0.2);
+
+        .mtt__image-box {
+            width: 40%;
+            margin-right: 10px;
+        }
+
+        .mtt__text-box {
+            font-size: 1rem;
+            justify-content: space-between;
+            width: 60%;
+            margin-left: 10px;
+            align-self: center;
+        }
+    }    
+
+.projects {
+
+    &__heading {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .ae-projects__content {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+
+        .ae-projects__content-001 {
+            margin: 0 20px;
+            width: 33.3%;
+            box-shadow: $box-shadow;
+            background-color: #fff;
+            transition: all .5s ease-in-out;
+            cursor: pointer;
+
+        }
+    
+        .ae-projects__content-001:hover {
+            transform: scale(1.06);
+            box-shadow: $box-hover;
+            transition: .5s;
+        }
+    
+        img {
+            height: 210px;
+            width: 100%;
+        }
+
+        
+    }
+
+    
+}
+
+    .need-a-solar {
+        flex-direction: row;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+
+        &__box {
+            width: 70%;
+            display: flex;
+            justify-content: center;
+            background-color: #fff;
+            box-shadow: $box-shadow;
+            margin: 0 auto;
+            padding: 20px;
+
+            img {
+                width: 60%;
+            }
+
+            .need-a-solar__textbox {
+                width: 40%;
+                // margin: 0 10px;
+                align-items: center;
+                align-self: center;
+
+                h2 {
+                    font-weight: 900;
+                    margin-bottom: 10px;
+                    color: $text-color;
+                }
+            }
+
+            &__button {
+                margin: 0 20px;
+                justify-content: center;
+                width: 150px;
+            }
+        }
+    }   
+}
+
+
+
+@media (min-width: 1025px) {
+   
+    .hero-container {
+        background: linear-gradient(100deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.2)), 
+                url(/images/hero-banner.jpg) no-repeat center fixed;
+        height: 500px;
+        width: 100%;
+        background-size: default;
+        background-position-x: 50%;
+        background-position-y: 12%;
+        display: flex;
+
+        .hero-content {
+            width: 60%;
+            margin: 0 auto;
+
+                .h3 {
+                    font-weight: 700;
+                }
+        }
+    }
+
+    .why-container {
+        
+        .why-content {
+            width: 60%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+
+                .img-why {
+                    width: 20%;
+
+                   
+                }
+
+                .why-desc {
+                    width: 70%;
+                    margin: 0 auto;
+                    padding: 60px 20px;
+                    align-items: center;
+                    align-content: center;
+
+                    h2 {
+                        font-size: 2rem;
+                    }
+                }
+        }        
+    }
+
+    .services {
+        margin: 0 auto;
+        padding: 100px 0 80px 0;
+        background-color: #F2F2F2;
+
+        &__content {
+            width: 40%;
+            margin: 0 auto;
+            padding-bottom: 40px;
+
+            h2, p {
+                text-align: center;
+                width: 60%;
+                margin: 0 auto;
+            }
+        }
+        
+        &__content_services {
+            width: 60%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;   
+        }
+
+        &__design, 
+        &__installation, 
+        &__renewable {
+            width: 20%;
+            margin: 0 auto;
+        }
+    }
+
+.mtt-container {
+    margin: 0 auto;
+
+    .mtt__container-box {
+        width: 44%;
+        justify-content: center;
+        margin: 20px auto;
+        
+
+        .mtt__image-box {
+            width: 40%;
+        }
+
+        .mtt__text-box {
+            width: 60%;
+            font-size: 1rem;
+        }
+    }
+}
+    .projects {
+        padding: 100px 0;
+
+        &__heading {
+            width: 40%;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .ae-projects__content {
+            width: 80%;
+            margin: 0 auto;
+            justify-content: center;
+
+            .ae-projects__content-001 {
+                width: 33.3%;
+                margin: 0 20px; 
+                box-shadow: $box-shadow;
+                height: auto;
+                width: 360px;
+                transition: 0.5s ease;
+                background-color: #fff;
+                cursor: pointer;
+            }
+    
+             img {
+                height: 260px;
+                width: 100%;
+            }  
+            
+        }
+    
+        
+    }
+    
+.need-a-solar {
+    padding: 60px 0;
+    
+    &__box {
+        width: 800px;
+        display: flex;
+        justify-content: center;
+        background-color: #fff;
+        box-shadow: $box-shadow;
+        margin: 0 auto;
+        padding: 20px;
+
+        img {
+            width: 60%;
+        }
+
+        .need-a-solar__textbox {
+            width: 40%;
+
+            h2 {
+                font-size: 30px;
+                line-height: 1;
+                margin-bottom: 20px;
+                color: $text-color;
+            }
+
+            a {
+                font-size: 20px;
+                font-weight: 700;
+                
+            }
+            &__button {
+                margin: 0 20px;
+                justify-content: center;
+                width: 150px;
+            }
+        } 
+    }
+    .need-a-solar__button {
+        width: 150px;
+    }
+}
+}

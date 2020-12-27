@@ -1,0 +1,60 @@
+.about__team-card-box {
+    box-shadow: $box-shadow;
+    margin: 20px 0;
+    padding-bottom: 40px;
+
+    img {
+        width: 100%;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: $text-color;
+        padding: 0 10px;
+        
+    }
+
+    p {
+        font-size: 0.9rem;
+        font-weight: 100;
+        color: $text-color;
+        padding: 0 10px;
+        line-height: 0.8;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .about__team-member-box {
+        display: flex;
+
+        .about__team-card-box {
+            margin: 0 10px;
+        }
+    }
+}
+
+@media (min-width: 1025px) {
+
+    .about__title {
+        width: 50%;
+        margin: 0 auto;
+
+        p {
+            width: 100%;
+        }
+    }
+
+    .about__team-title {
+        width: 50%;
+        margin: 0 auto 10px;
+    }
+
+    .about__team-member-box {
+        width: 50%;
+        margin: 0 auto;
+        
+        
+    }
+}

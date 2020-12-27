@@ -1,0 +1,199 @@
+.header-cont {
+    width: 100%;
+    box-shadow: 1px 1px 10px rgba($color: #707070, $alpha: 0.2);
+    z-index: 1000;
+    top: 0;
+    background-color: #ffffff;
+    
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 4px 10px;
+        // position: fixed;
+        background-color: #ffffff;
+        width: 100%;
+        
+
+        .logo {
+            height: 80px;
+            justify-content: center;
+            align-self: center;
+            align-items: center;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .nav-container {
+            display: flex;
+            align-self: center;
+            top: 0;
+    
+             .nav-menu {
+                display: none;
+            }
+
+            // NAV MENU 
+
+            .nav-menu.show {
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                transition: .5s;
+                top: 5.9rem;
+                right: 0;
+                width: 100%;
+                background-color: #ffffff;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);     
+                transform: .5s ease-in ease-out;                        
+              }
+
+            .nav-menu li {
+                list-style: none;
+                padding: 12px;
+            }
+
+            .nav-menu li:hover {
+                color: #ffffff;
+                background-color: $primary-color;
+                cursor: pointer;
+            }
+            
+            .nav-menu li a {
+                font-size: 1rem;
+                text-decoration: none;
+                color: rgba($color: #8a8a8a, $alpha: 1.0);
+                padding: 0 15px;
+            }
+        
+            ul li:hover a {
+                color: #fff;
+                cursor: pointer;
+            }
+
+            .nav-menu li a:hover, a:focus, a:active {
+                color: #fff;
+                cursor: pointer;    
+            }
+
+            .call {
+                display: none;  
+            }
+        
+        
+            button {
+                background-color: $secondary-color;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 50px;
+                transition: .5s ease;
+                cursor: pointer;
+            }
+        
+            button:hover {
+                background-color: #f7a400;
+                transition: .5s;
+                box-shadow: 1px 1px 10px rgba($color: #3a3a3a, $alpha: 0.2);
+            }
+        
+            button a {
+                color: #fff;
+                text-decoration: none;
+                align-self: center;
+            }
+        
+            .toggle {
+                font-size: 22px;
+                color: $primary-color;
+                // border: 0.5px solid $primary-color;
+                background-color: transparent;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+        
+            .toggle:focus {
+                color: $primary-color;
+                border: 0.5px solid $primary-color;
+
+            }
+        
+            .toggle:hover, .toggle:active  {
+                color: #fff;
+                background-color: $hover-color;
+                transition: 0;
+            }
+        }
+    }
+}    
+
+
+@media (min-width: 768px) {
+    .header-cont {
+        box-shadow: 1px 1px 10px rgba($color: #707070, $alpha: 0.2);
+        z-index: 1000;
+        background-color: #ffffff;
+        width: 100%;
+
+        .header-container {
+            width: 100%;
+            margin: 0 auto;
+            justify-content: space-between;
+
+            .nav-container {
+                .toggle {
+                    display: none;
+                }
+        
+                .nav-menu {
+                    display: flex;
+                    align-items: center;
+                }
+
+                .nav-menu li a:hover{
+                    color: $text-color;
+                }
+                
+                .nav-menu li:hover {
+                    color: $text-color;
+                    background-color: unset !important;
+                }
+
+                ul li:hover a {
+                    color: $text-color;
+                }
+
+                .nav-menu.show {
+                    display: none;
+                }
+        
+                .call {
+                    display: flex;
+                }
+    
+                 a {
+                    font-size: 1rem;
+                }
+        
+                }
+            }
+        }
+    }
+
+
+@media (min-width: 1025px) {
+
+    .header-cont {
+        box-shadow: 1px 1px 10px rgba($color: #707070, $alpha: 0.2);
+        z-index: 1000;
+        width: 100%;
+
+        .header-container {
+            width: 70%;
+            margin: 0 auto;
+        }
+
+            .nav-menu.show {
+                display: none;
+            }
+        }
+    }
