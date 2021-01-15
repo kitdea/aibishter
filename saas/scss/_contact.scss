@@ -61,7 +61,7 @@
                 font-family: $font-stack;
                 font-weight: 100;
                 width: 100%;
-                background-color: #d7edff;
+                background-color: $bg-color;
             }
 
             button {
@@ -91,6 +91,7 @@
     .contact-container {
 
         .contact__title {
+            width: 100%;
             padding-bottom: 40px;
         }
 
@@ -102,13 +103,16 @@
             margin: 0 auto;
         }
         .location-map {
-            width: 60%;
+            width: 100%;
             margin: 0 auto;
         }
         
         .form {
-            width: 500px;
-            margin: 40px auto;
+            width: 60%;
+
+            :focus, :active {
+                outline: none;
+            } 
         }
                           
         }
@@ -120,7 +124,7 @@
     .contact-container {
 
         .contact__title {
-            width: 50%;
+            width: 60%;
             margin: 0 auto;
             padding-bottom: 40px;
         }
@@ -129,12 +133,13 @@
             display: flex;
             flex-direction: row;
             justify-content: center;
-            width: 50%;
-            margin: 0 auto;
+            flex-wrap: wrap;
+            width: 60%;
+            // margin: 0 auto;
                 
         .contact__location {
-            width: 50%;
-            margin: 0 auto;
+            width: 100%;
+            margin: 0 20px;
         
         p {
             font-size: 1.2rem;
@@ -145,11 +150,6 @@
             width: 100%;
             margin: 0 auto;
         }
-
-        .form {
-            width: 400px;
-            margin: 20px 20px;
-        }  
         
         }
         }
