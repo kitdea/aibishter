@@ -17,15 +17,6 @@
             }
         }
 
-        .location-map {
-            
-            iframe {
-                margin-top: 20px;
-                width: 100%;
-                height: 350px;
-            }
-        }
-
         .form {
             margin: 40px auto 0 auto;
             width: 100%;
@@ -102,11 +93,7 @@
         .contact__location {
             margin: 0 auto;
         }
-        .location-map {
-            width: 100%;
-            margin: 0 auto;
-        }
-        
+       
         .form {
             width: 60%;
 
@@ -119,12 +106,11 @@
     }
 }
 
-
 @media (min-width: 1025px) {
     .contact-container {
 
         .contact__title {
-            width: 60%;
+            width: 80%;
             margin: 0 auto;
             padding-bottom: 40px;
         }
@@ -145,16 +131,10 @@
             font-size: 1.2rem;
             font-weight: 700;
         }
-
-        .location-map {
-            width: 100%;
-            margin: 0 auto;
-        }
-        
         }
         }
     }
 }
-
+        
 
 
