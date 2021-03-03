@@ -103,18 +103,20 @@
                 background-color: transparent;
                 border-radius: 4px;
                 cursor: pointer;
+                outline: 0;
             }
         
             .toggle:focus {
                 color: $primary-color;
                 border: 0.5px solid $primary-color;
-
+                outline: 0;
             }
         
             .toggle:hover, .toggle:active  {
                 color: #fff;
                 background-color: $hover-color;
                 transition: 0;
+                outline: 0;
             }
         }
     }
