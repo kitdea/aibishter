@@ -30,16 +30,17 @@
             top: 0;
 
             // NAV MENU 
-
             .nav-menu {
                 position: absolute;
-                display: none;
                 top: 5.9rem;
                 right: 0;
                 width: 100%;
                 background-color: #ffffff;
-                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);     
-                transform: .5s ease-in ease-out;                        
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);                    
+            }
+
+            .nav-menu {
+                display: none;
             }
 
             .nav-menu li {
@@ -73,7 +74,6 @@
             .call {
                 display: none;  
             }
-        
         
             button {
                 background-color: $secondary-color;
@@ -142,7 +142,7 @@
         
                 .nav-menu {
                     position: unset;
-                    display: flex;
+                    display: flex !important;
                     align-items: center;
                     box-shadow: unset;
                 }
@@ -173,7 +173,6 @@
         }
     }
 }
-
 
 @media (min-width: 1025px) {
 
