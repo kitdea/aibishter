@@ -1,6 +1,6 @@
-@import 'header';
 @import 'config';
 @import 'footer';
+@import 'header';
 @import 'utilities';
 @import 'about';
 @import 'contact';
@@ -26,7 +26,7 @@ html {
 // HERO SECTION
 .hero-container {
     background: linear-gradient(100deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.5)), 
-                url(../images/hero-banner.jpg) no-repeat center scroll;
+                url(/images/hero-banner.jpg) no-repeat center scroll;
     height: 400px;
     width: 100%;
     background-size: default;
@@ -34,49 +34,49 @@ html {
     background-position-y: 12%;
     display: flex;
             
-    .hero-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 0 10px;
+            .hero-content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 0 10px;
 
-        h1 {
-            font-family: $font-stack;
-            font-size: calc(1.7rem + 0.8vw);
-            color: rgb(80, 80, 80);
-            font-weight: 700;
-            // text-shadow: 1px 2px 2px rgba(131, 131, 131, 0.1);
-        }
+                        h1 {
+                            font-family: $font-stack;
+                            font-size: calc(1.7rem + 0.8vw);
+                            color: rgb(80, 80, 80);
+                            font-weight: 700;
+                            // text-shadow: 1px 2px 2px rgba(131, 131, 131, 0.1);
+                        }
 
-        h3 {
-            font-family: $font-stack;
-            color: rgb(80, 80, 80);
-            font-weight: 400;
-        }
+                        h3 {
+                            font-family: $font-stack;
+                            color: rgb(80, 80, 80);
+                            font-weight: 400;
+                        }
 
-        .hero-btn {
-            background-color: $secondary-color;
-            padding: 12px 20px;
-            border: none;
-            border-radius: 50px;
-            width: 140px;
-            margin-top: 10px;
-            transition: .5s ease;
-            cursor: pointer;
-        }
+                        .hero-btn {
+                            background-color: $secondary-color;
+                            padding: 12px 20px;
+                            border: none;
+                            border-radius: 50px;
+                            width: 140px;
+                            margin-top: 10px;
+                            transition: .5s ease;
+                            cursor: pointer;
+                        }
 
-        .hero-btn a {
-            font-family: $font-stack;
-            color: #fff;
-            text-decoration: none;
-        }
+                        .hero-btn a {
+                            font-family: $font-stack;
+                            color: #fff;
+                            text-decoration: none;
+                        }
 
-        .hero-btn:hover {
-            background-color: #f7a400;
-            transition: .5s;
-            box-shadow: 1px 1px 10px rgba($color: #3a3a3a, $alpha: 0.2);
-        }
-    }
+                        .hero-btn:hover {
+                            background-color: #f7a400;
+                            transition: .5s;
+                            box-shadow: 1px 1px 10px rgba($color: #3a3a3a, $alpha: 0.2);
+                        }
+            }
 }
 
 // WHY SECTION
@@ -85,26 +85,26 @@ html {
     padding: 50px 0;
     background-color: $bg-color;
 
-    .why-content {
-        padding: 0 10px;
-    }
-    
-    .img-why img {
-        width:100%;
-        height: 100%;
-    }
+        .why-content {
+            padding: 0 10px;
+        }
+        
+        .img-why img {
+            width:100%;
+            height: 100%;
+        }
 
-    h2 {
-        font-family: $font-stack;
-        font-size: 1.4rem;
-        color:rgb(80, 80, 80);
-        text-align: center;            
-    }
+        h2 {
+            font-family: $font-stack;
+            font-size: 1.4rem;
+            color:rgb(80, 80, 80);
+            text-align: center;            
+        }
 
-    p {
-        font-family: $font-stack;
-        color:rgb(80, 80, 80);
-    }
+        p {
+            font-family: $font-stack;
+            color:rgb(80, 80, 80);
+        }
 }
 
 // SERVICES

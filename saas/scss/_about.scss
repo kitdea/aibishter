@@ -38,7 +38,7 @@
 @media (min-width: 1025px) {
 
     .about__title {
-        width: 60%;
+        width: 50%;
         margin: 0 auto;
 
         p {
@@ -47,12 +47,14 @@
     }
 
     .about__team-title {
-        width: 60%;
+        width: 50%;
         margin: 0 auto 10px;
     }
 
     .about__team-member-box {
-        width: 60%;
-        margin: 0 auto;  
+        width: 50%;
+        margin: 0 auto;
+        
+        
     }
 }

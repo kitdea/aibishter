@@ -78,6 +78,14 @@
     }
 }
 
+.location-map {
+    iframe {
+        margin-top: 20px;
+        width: 100%;
+        height: 350px;
+    }
+}
+
 @media (min-width: 768px) {
     .contact-container {
 
@@ -93,7 +101,11 @@
         .contact__location {
             margin: 0 auto;
         }
-       
+        .location-map {
+            width: 100%;
+            margin: 0 auto;
+        }
+        
         .form {
             width: 60%;
 
@@ -106,11 +118,12 @@
     }
 }
 
+
 @media (min-width: 1025px) {
     .contact-container {
 
         .contact__title {
-            width: 80%;
+            width: 60%;
             margin: 0 auto;
             padding-bottom: 40px;
         }
@@ -131,10 +144,16 @@
             font-size: 1.2rem;
             font-weight: 700;
         }
+
+        .location-map {
+            width: 100%;
+            margin: 0 auto;
+        }
+        
         }
         }
     }
 }
-        
+
 
 
